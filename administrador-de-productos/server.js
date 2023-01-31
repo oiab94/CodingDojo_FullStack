@@ -3,7 +3,7 @@ const cors = require("cors");
 
 // * Inicia express
 const app = express();
-const port = 3000;
+const port = 8000;
 
 // * Ponemos a la escucha el servidor
 app.listen(port, () => console.log(`Se escucha en el puerto ${port}`));

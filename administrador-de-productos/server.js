@@ -10,3 +10,6 @@ app.listen(port, () => console.log(`Se escucha en el puerto ${port}`));
 
 // * Insertamos los MIDDLEWARE
 app.use(cors());
+
+// * Conexion a la DB
+require("./server/config/mongoose.config")

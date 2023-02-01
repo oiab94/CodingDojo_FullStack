@@ -9,14 +9,24 @@ const createUser =
 			.catch(error => res.json(error))
 	};
 
-// * Agregamos la forma en la que se recupera los datos
+// * Recupera los datos de los usuarios
 const getUsers = 
 	(req, res) => {
 		User.find({})
 			.then(users => res.json(users))
 			.catch(err => res.json(err))
 	};
+
+// * Recupera los datos de una persona
+const getOneUser =
+	(req, res) => {
+		User.findOne({ _id: req.params.id })
+			.then(user => res.json(user))
+			.catch(err => res.json(err))
+	}
+
 module.exports = {
 	createUser,
-	getUsers
+	getUsers,
+	getOneUser
 };

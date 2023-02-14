@@ -7,3 +7,4 @@
 - [Tarea: Administrado de Producto II](/administrador-de-productos-2/)
 - [Actualizar y Eliminar](/actualizar-y-eliminar/)
 - [Tarea: Administrador de Producto III](/administrador-de-productos-3/)
+- [Tarea: Autores](/autores/)
